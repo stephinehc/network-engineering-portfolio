@@ -1,0 +1,176 @@
+[
+  {
+    "id": 1,
+    "title": "Small Office Enterprise Network",
+    "repository": "https://github.com/YOUR_USERNAME/enterprise-small-office-network",
+    "thumbnail": "assets/images/projects/project01.png",
+    "difficulty": "Beginner",
+
+    "description": "Design and implementation of a small office LAN demonstrating IPv4 addressing, VLANs, DHCP, router-on-a-stick, and Internet-ready architecture.",
+
+    "status": "Completed",
+
+    "featured": true,
+
+    "packetTracer": true,
+
+    "documentation": true,
+
+    "devices": {
+      "routers": 1,
+      "layer2Switches": 2,
+      "layer3Switches": 0,
+      "servers": 1,
+      "wireless": 0
+    },
+
+    "technologies": [
+      "Subnetting",
+      "Static Routing",
+      "VLAN",
+      "Trunking",
+      "Inter-VLAN Routing",
+      "DHCP"
+    ],
+
+    "roadmap": [
+      1,
+      2,
+      4,
+      5
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": "Multi-Branch Enterprise Network",
+    "repository": "https://github.com/YOUR_USERNAME/multi-branch-enterprise-network",
+    "thumbnail": "assets/images/projects/project02.png",
+    "difficulty": "Intermediate",
+
+    "description": "Enterprise WAN connecting multiple branch offices using RIP and OSPF with centralized services.",
+
+    "status": "Completed",
+
+    "featured": true,
+
+    "packetTracer": true,
+
+    "documentation": true,
+
+    "devices": {
+      "routers": 3,
+      "layer2Switches": 3,
+      "layer3Switches": 1,
+      "servers": 2,
+      "wireless": 0
+    },
+
+    "technologies": [
+      "RIP",
+      "OSPF",
+      "DHCP",
+      "DNS",
+      "VLAN",
+      "Trunking"
+    ],
+
+    "roadmap": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+
+  {
+    "id": 3,
+    "title": "Enterprise Campus Network",
+    "repository": "https://github.com/YOUR_USERNAME/enterprise-campus-network",
+    "thumbnail": "assets/images/projects/project03.png",
+    "difficulty": "Advanced",
+
+    "description": "Enterprise campus implementing OSPF, EtherChannel, STP, ACLs, DHCP, and scalable switching.",
+
+    "status": "Completed",
+
+    "featured": true,
+
+    "packetTracer": true,
+
+    "documentation": true,
+
+    "devices": {
+      "routers": 2,
+      "layer2Switches": 5,
+      "layer3Switches": 2,
+      "servers": 3,
+      "wireless": 0
+    },
+
+    "technologies": [
+      "OSPF",
+      "RSTP",
+      "EtherChannel",
+      "ACL",
+      "DHCP",
+      "DNS"
+    ],
+
+    "roadmap": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+
+  {
+    "id": 4,
+    "title": "Three-Building University Network",
+    "repository": "https://github.com/YOUR_USERNAME/university-campus-network",
+    "thumbnail": "assets/images/projects/project04.png",
+    "difficulty": "Advanced"
+  },
+
+  {
+    "id": 5,
+    "title": "Enterprise Internet Edge",
+    "repository": "https://github.com/YOUR_USERNAME/enterprise-internet-edge",
+    "thumbnail": "assets/images/projects/project05.png",
+    "difficulty": "Advanced"
+  },
+
+  {
+    "id": 6,
+    "title": "Secure Enterprise Infrastructure",
+    "repository": "https://github.com/YOUR_USERNAME/secure-enterprise-network",
+    "thumbnail": "assets/images/projects/project06.png",
+    "difficulty": "Advanced"
+  },
+
+  {
+    "id": 7,
+    "title": "Headquarters–Branch VPN",
+    "repository": "https://github.com/YOUR_USERNAME/headquarters-branch-vpn",
+    "thumbnail": "assets/images/projects/project07.png",
+    "difficulty": "Expert"
+  },
+
+  {
+    "id": 8,
+    "title": "High Availability Enterprise Network",
+    "repository": "https://github.com/YOUR_USERNAME/high-availability-enterprise-network",
+    "thumbnail": "assets/images/projects/project08.png",
+    "difficulty": "Expert"
+  },
+
+  {
+    "id": 9,
+    "title": "Enterprise Infrastructure Capstone",
+    "repository": "https://github.com/YOUR_USERNAME/enterprise-infrastructure-capstone",
+    "thumbnail": "assets/images/projects/project09.png",
+    "difficulty": "Expert"
+  }
+]
