@@ -1,15 +1,17 @@
+/* ==========================================================================
+   Roadmap Module
+========================================================================== */
+
 'use strict';
 
 const RoadmapModule = {
 
-    async load(){
+    async load() {
 
-        try{
+        try {
 
             const response = await fetch(
-
                 'data/roadmap.json'
-
             );
 
             const roadmap = await response.json();
@@ -18,7 +20,7 @@ const RoadmapModule = {
 
         }
 
-        catch(error){
+        catch (error) {
 
             console.error(error);
 
@@ -26,47 +28,51 @@ const RoadmapModule = {
 
     },
 
-    render(items){
+    render(items) {
 
-        const container=document.querySelector(
-
+        const container = document.querySelector(
             '[data-roadmap-container]'
-
         );
 
-        if(!container){
+        if (!container) return;
 
-            return;
+        container.innerHTML = '';
 
-        }
+        const template = document.getElementById(
+            'roadmap-card-template'
+        );
 
-        container.innerHTML='';
+        items.forEach(item => {
 
-        items.forEach(item=>{
+            const clone = template.content.cloneNode(true);
 
-            const card=document.createElement('article');
+            clone.querySelector(
+                '[data-roadmap-title]'
+            ).textContent = item.title;
 
-            card.className='roadmap-card';
+            clone.querySelector(
+                '[data-roadmap-description]'
+            ).textContent = item.description;
 
-            card.innerHTML=`
+            clone.querySelector(
+                '[data-roadmap-link]'
+            ).href = item.repository;
 
-                <h3>${item.title}</h3>
+            const topics = clone.querySelector(
+                '[data-roadmap-topics]'
+            );
 
-                <p>${item.description}</p>
+            (item.topics || []).forEach(topic => {
 
-                <a
-                    href="${item.repository}"
-                    target="_blank"
-                    class="btn btn-outline"
-                >
+                const li = document.createElement('li');
 
-                    View Repository
+                li.textContent = topic;
 
-                </a>
+                topics.appendChild(li);
 
-            `;
+            });
 
-            container.appendChild(card);
+            container.appendChild(clone);
 
         });
 
