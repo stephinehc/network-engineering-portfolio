@@ -1,24 +1,27 @@
+/* ==========================================================================
+   Certifications Module
+========================================================================== */
+
 'use strict';
 
 const CertificationsModule = {
 
-    async load(){
+    async load() {
 
-        try{
+        try {
 
             const response = await fetch(
-
                 'data/certifications.json'
-
             );
 
-            const certifications = await response.json();
+            const certifications =
+                await response.json();
 
             this.render(certifications);
 
         }
 
-        catch(error){
+        catch (error) {
 
             console.error(error);
 
@@ -26,53 +29,45 @@ const CertificationsModule = {
 
     },
 
-    render(certifications){
+    render(certifications) {
 
-        const container=document.querySelector(
-
+        const container = document.querySelector(
             '[data-certifications-container]'
-
         );
 
-        if(!container){
+        if (!container) return;
 
-            return;
+        container.innerHTML = '';
 
-        }
+        const template = document.getElementById(
+            'certification-card-template'
+        );
 
-        container.innerHTML='';
+        certifications.forEach(cert => {
 
-        certifications.forEach(cert=>{
+            const clone = template.content.cloneNode(true);
 
-            const card=document.createElement('article');
+            clone.querySelector(
+                '.certification-image'
+            ).src = cert.badge;
 
-            card.className='card';
+            clone.querySelector(
+                '.certification-image'
+            ).alt = cert.name;
 
-            card.innerHTML=`
+            clone.querySelector(
+                '[data-certification-name]'
+            ).textContent = cert.name;
 
-                <img
-                    src="${cert.badge}"
-                    alt="${cert.name}"
-                    class="cert-badge"
-                >
+            clone.querySelector(
+                '[data-certification-issuer]'
+            ).textContent = cert.issuer;
 
-                <h3>${cert.name}</h3>
+            clone.querySelector(
+                '[data-certification-link]'
+            ).href = cert.verification;
 
-                <p>${cert.issuer}</p>
-
-                <a
-                    href="${cert.verification}"
-                    target="_blank"
-                    class="btn btn-primary"
-                >
-
-                    Verify
-
-                </a>
-
-            `;
-
-            container.appendChild(card);
+            container.appendChild(clone);
 
         });
 
