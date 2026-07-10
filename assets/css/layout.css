@@ -1,0 +1,375 @@
+/* ==========================================================================
+   Network Engineering Portfolio
+   Layout
+   Version: 0.2.0
+========================================================================== */
+
+/* ==========================================================================
+   CONTAINER
+========================================================================== */
+
+.container{
+
+    width:min(92%, var(--container));
+
+    margin-inline:auto;
+
+}
+
+/* ==========================================================================
+   MAIN LAYOUT
+========================================================================== */
+
+main{
+
+    min-height:100vh;
+
+}
+
+/* ==========================================================================
+   SECTION
+========================================================================== */
+
+.section{
+
+    padding:6rem 0;
+
+}
+
+.section-title{
+
+    margin-bottom:3rem;
+
+    font-weight:800;
+
+}
+
+.section-subtitle{
+
+    color:var(--color-text-light);
+
+    margin-bottom:4rem;
+
+}
+
+/* ==========================================================================
+   NAVIGATION
+========================================================================== */
+
+.site-header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:var(--z-navbar);
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid var(--color-border);
+
+}
+
+html[data-theme="dark"] .site-header{
+
+    background:rgba(11,18,32,.94);
+
+}
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:72px;
+
+}
+
+/* ==========================================================================
+   LOGO
+========================================================================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    font-weight:700;
+
+    font-size:1.1rem;
+
+}
+
+.logo img{
+
+    width:42px;
+
+}
+
+/* ==========================================================================
+   NAVIGATION LINKS
+========================================================================== */
+
+.nav-links{
+
+    display:flex;
+
+    gap:2rem;
+
+}
+
+.nav-links a{
+
+    position:relative;
+
+    font-weight:500;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--color-primary);
+
+    transition:var(--transition-normal);
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+/* ==========================================================================
+   HERO
+========================================================================== */
+
+.hero{
+
+    padding-top:5rem;
+
+    padding-bottom:6rem;
+
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:5rem;
+
+    align-items:center;
+
+}
+
+.hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.4rem;
+
+}
+
+.hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:.5rem;
+
+    padding:.5rem 1rem;
+
+    border-radius:999px;
+
+    background:var(--color-primary-light);
+
+    color:var(--color-primary);
+
+    width:max-content;
+
+    font-weight:600;
+
+    font-size:.9rem;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+    margin-top:1rem;
+
+}
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:580px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* ==========================================================================
+   GRID
+========================================================================== */
+
+.grid{
+
+    display:grid;
+
+    gap:2rem;
+
+}
+
+.grid-2{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-3{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.grid-4{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+/* ==========================================================================
+   FOOTER
+========================================================================== */
+
+.site-footer{
+
+    margin-top:5rem;
+
+    padding:3rem 0;
+
+    border-top:1px solid var(--color-border);
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:3rem;
+
+}
+
+/* ==========================================================================
+   RESPONSIVE
+========================================================================== */
+
+@media (max-width:992px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.grid-4{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.nav-links{
+
+display:none;
+
+}
+
+.section{
+
+padding:4rem 0;
+
+}
+
+.grid-2,
+.grid-3,
+.grid-4{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-badge{
+
+margin-inline:auto;
+
+}
+
+}
