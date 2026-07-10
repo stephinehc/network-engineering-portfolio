@@ -1,0 +1,47 @@
+{
+  "name": "Stephine Hubert Campos",
+  "title": "Licensed Electronics Engineer",
+  "headline": "Network Engineer | Cisco Networking Academy Instructor | IT Infrastructure | System Integration | NOC",
+  "location": "Cebu City, Philippines",
+
+  "summary": "Licensed Electronics Engineer and college instructor with hands-on experience designing, configuring, and documenting Cisco enterprise networks using Packet Tracer and physical Cisco equipment. Passionate about enterprise routing, campus switching, infrastructure services, and network security.",
+
+  "email": "",
+
+  "linkedin": "",
+
+  "github": "",
+
+  "resume": "downloads/resume.pdf",
+
+  "photo": "assets/images/profile/profile.jpg",
+
+  "currentFocus":[
+
+      "Enterprise Campus Networking",
+
+      "CCNA",
+
+      "Enterprise Routing",
+
+      "Network Infrastructure",
+
+      "Network Security",
+
+      "System Integration"
+
+  ],
+
+  "statistics":{
+
+      "projects":9,
+
+      "technologies":18,
+
+      "certifications":0,
+
+      "packetTracerLabs":50
+
+  }
+
+}
