@@ -1,0 +1,188 @@
+[
+    {
+        "id":1,
+        "title":"Network Design Fundamentals",
+        "icon":"network",
+        "difficulty":"Fundamentals",
+
+        "description":"Network design principles, subnetting, IPv4 addressing, network documentation, topology planning, and enterprise network architecture.",
+
+        "repository":"https://github.com/YOUR_USERNAME/network-roadmap/tree/main/01-network-design-fundamentals",
+
+        "topics":[
+            "OSI Model",
+            "TCP/IP",
+            "Subnetting",
+            "VLSM",
+            "CIDR",
+            "Address Planning",
+            "Topology Design"
+        ]
+    },
+
+    {
+        "id":2,
+
+        "title":"LAN Technologies",
+
+        "icon":"network",
+
+        "difficulty":"Intermediate",
+
+        "description":"Ethernet technologies, VLAN implementation, trunking, Layer 2 switching concepts and LAN deployment.",
+
+        "repository":"https://github.com/YOUR_USERNAME/network-roadmap/tree/main/02-lan-technologies",
+
+        "topics":[
+            "Ethernet",
+            "VLAN",
+            "Trunking",
+            "Inter-VLAN Routing"
+        ]
+    },
+
+    {
+        "id":3,
+
+        "title":"Switching Technologies",
+
+        "icon":"git-branch",
+
+        "difficulty":"Intermediate",
+
+        "description":"Enterprise switching including STP, EtherChannel, Layer 2 redundancy, and switch optimization.",
+
+        "repository":"https://github.com/YOUR_USERNAME/network-roadmap/tree/main/03-switching-technologies",
+
+        "topics":[
+            "RSTP",
+            "PVST",
+            "EtherChannel",
+            "Port Security"
+        ]
+    },
+
+    {
+        "id":4,
+
+        "title":"Routing Technologies",
+
+        "icon":"route",
+
+        "difficulty":"Advanced",
+
+        "description":"Enterprise routing implementation using Static Routing, RIP, OSPF, and route optimization.",
+
+        "repository":"https://github.com/YOUR_USERNAME/network-roadmap/tree/main/04-routing-technologies",
+
+        "topics":[
+            "Static Routing",
+            "RIP",
+            "OSPF"
+        ]
+    },
+
+    {
+        "id":5,
+
+        "title":"Network Services",
+
+        "icon":"server",
+
+        "difficulty":"Advanced",
+
+        "description":"Infrastructure services required in enterprise environments.",
+
+        "repository":"https://github.com/YOUR_USERNAME/network-roadmap/tree/main/05-network-services",
+
+        "topics":[
+            "DHCP",
+            "DNS",
+            "NAT",
+            "TFTP"
+        ]
+    },
+
+    {
+        "id":6,
+
+        "title":"Network Security",
+
+        "icon":"shield",
+
+        "difficulty":"Advanced",
+
+        "description":"Access control, security hardening and enterprise protection.",
+
+        "repository":"https://github.com/YOUR_USERNAME/network-roadmap/tree/main/06-network-security",
+
+        "topics":[
+            "ACL",
+            "Port Security",
+            "SSH"
+        ]
+    },
+
+    {
+        "id":7,
+
+        "title":"High Availability",
+
+        "icon":"activity",
+
+        "difficulty":"Advanced",
+
+        "description":"Enterprise redundancy using first-hop redundancy and resilient switching.",
+
+        "repository":"https://github.com/YOUR_USERNAME/network-roadmap/tree/main/07-high-availability",
+
+        "topics":[
+            "HSRP",
+            "Redundancy",
+            "Failover"
+        ]
+    },
+
+    {
+        "id":8,
+
+        "title":"Secure WAN",
+
+        "icon":"lock",
+
+        "difficulty":"Advanced",
+
+        "description":"Secure branch connectivity using GRE tunnels protected with IPsec.",
+
+        "repository":"https://github.com/YOUR_USERNAME/network-roadmap/tree/main/08-secure-wan",
+
+        "topics":[
+            "GRE",
+            "IPsec",
+            "VPN"
+        ]
+    },
+
+    {
+        "id":9,
+
+        "title":"Enterprise Campus Network Concepts",
+
+        "icon":"building",
+
+        "difficulty":"Expert",
+
+        "description":"Complete enterprise infrastructure integrating routing, switching, services, security, redundancy and wireless networking.",
+
+        "repository":"https://github.com/YOUR_USERNAME/network-roadmap/tree/main/09-enterprise-campus",
+
+        "topics":[
+            "Enterprise Design",
+            "Wireless",
+            "HSRP",
+            "OSPF",
+            "ACL",
+            "NAT"
+        ]
+    }
+]
