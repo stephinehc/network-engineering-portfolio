@@ -1,0 +1,488 @@
+/* ==========================================================
+   Network Engineering Portfolio
+   Base Stylesheet
+   Author : Stephine Hubert Campos
+   Version: v0.3.0
+========================================================== */
+
+
+/* ==========================================================
+   CSS RESET
+========================================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* ==========================================================
+   ROOT VARIABLES
+========================================================== */
+
+:root{
+
+    /* Cisco Inspired */
+
+    --primary:#049FD9;
+    --primary-dark:#0077A8;
+
+    --secondary:#1B365D;
+
+    --background:#F6F8FB;
+
+    --surface:#FFFFFF;
+
+    --surface-2:#EDF2F7;
+
+    --border:#D8E2EC;
+
+    --text:#1F2937;
+
+    --text-light:#64748B;
+
+    --success:#16A34A;
+
+    --warning:#F59E0B;
+
+    --danger:#DC2626;
+
+    --shadow:0 10px 30px rgba(0,0,0,.05);
+
+    --radius:14px;
+
+    --transition:.25s ease;
+
+    --max-width:1280px;
+
+}
+
+
+/* ==========================================================
+   DARK MODE VARIABLES
+========================================================== */
+
+body.dark{
+
+    --background:#0F172A;
+
+    --surface:#172033;
+
+    --surface-2:#1F2A3D;
+
+    --border:#334155;
+
+    --text:#F8FAFC;
+
+    --text-light:#CBD5E1;
+
+    --shadow:0 12px 32px rgba(0,0,0,.45);
+
+}
+
+
+/* ==========================================================
+   HTML
+========================================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+
+    font-family:"Inter",sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    transition:background var(--transition),
+               color var(--transition);
+
+}
+
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+/* ==========================================================
+   LISTS
+========================================================== */
+
+ul{
+
+    list-style:none;
+
+}
+
+
+/* ==========================================================
+   HEADINGS
+========================================================== */
+
+h1{
+
+    font-size:3.4rem;
+
+    line-height:1.1;
+
+    font-weight:800;
+
+}
+
+h2{
+
+    font-size:2.4rem;
+
+    margin-bottom:24px;
+
+}
+
+h3{
+
+    font-size:1.35rem;
+
+    margin-bottom:12px;
+
+}
+
+p{
+
+    color:var(--text-light);
+
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container{
+
+    width:min(92%,var(--max-width));
+
+    margin-inline:auto;
+
+}
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.section{
+
+    padding:90px 0;
+
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-2px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    background:white;
+
+}
+
+body.dark .btn-secondary{
+
+    background:transparent;
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+.card-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:24px;
+
+}
+
+
+/* ==========================================================
+   GENERIC CARD
+========================================================== */
+
+.card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:28px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* ==========================================================
+   CODE BLOCK
+========================================================== */
+
+.code{
+
+    font-family:"JetBrains Mono",monospace;
+
+    background:#101827;
+
+    color:#E2E8F0;
+
+    border-radius:10px;
+
+    padding:20px;
+
+    overflow:auto;
+
+}
+
+
+/* ==========================================================
+   TABLES
+========================================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:var(--surface-2);
+
+}
+
+th,
+td{
+
+    border:1px solid var(--border);
+
+    padding:14px;
+
+    text-align:left;
+
+}
+
+
+/* ==========================================================
+   UTILITIES
+========================================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-1{
+
+    margin-top:8px;
+
+}
+
+.mt-2{
+
+    margin-top:16px;
+
+}
+
+.mt-3{
+
+    margin-top:24px;
+
+}
+
+.mt-4{
+
+    margin-top:40px;
+
+}
+
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+
+/* ==========================================================
+   SELECTION
+========================================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+/* ==========================================================
+   FADE ANIMATION
+========================================================== */
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:1s;
+
+}
+
+.fade.show{
+
+    opacity:1;
+
+    transform:none;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    h1{
+
+        font-size:2.3rem;
+
+    }
+
+    h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .section{
+
+        padding:70px 0;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+}
