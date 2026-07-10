@@ -1,110 +1,85 @@
 /* ==========================================================================
    Projects Module
+   Version: 1.0.0
 ========================================================================== */
 
 'use strict';
 
 const ProjectsModule = {
 
-    projects:[],
+    async load() {
 
-    async load(){
+        try {
 
-        try{
+            const response = await fetch('data/projects.json');
 
-            const response = await fetch(
+            const projects = await response.json();
 
-                'data/projects.json'
-
-            );
-
-            this.projects = await response.json();
-
-            this.render();
+            this.render(projects);
 
         }
 
-        catch(error){
+        catch (error) {
 
-            console.error(error);
+            console.error('Projects failed to load.', error);
 
         }
 
     },
 
-    render(){
+    render(projects) {
 
-        const container=document.querySelector(
-
+        const container = document.querySelector(
             '[data-projects-container]'
-
         );
 
-        if(!container){
+        if (!container) return;
 
-            return;
+        container.innerHTML = '';
 
-        }
+        const template = document.getElementById(
+            'project-card-template'
+        );
 
-        container.innerHTML='';
+        projects.forEach(project => {
 
-        this.projects.forEach(project=>{
+            const clone = template.content.cloneNode(true);
 
-            container.appendChild(
+            clone.querySelector('.project-thumbnail').src =
+                project.thumbnail;
 
-                this.createCard(project)
+            clone.querySelector('.project-thumbnail').alt =
+                project.title;
 
+            clone.querySelector('[data-project-title]').textContent =
+                project.title;
+
+            clone.querySelector('[data-project-description]').textContent =
+                project.description || '';
+
+            clone.querySelector('[data-project-difficulty]').textContent =
+                project.difficulty;
+
+            clone.querySelector('[data-project-link]').href =
+                project.repository;
+
+            const list = clone.querySelector(
+                '[data-project-technologies]'
             );
 
+            (project.technologies || []).forEach(item => {
+
+                const li = document.createElement('li');
+
+                li.textContent = item;
+
+                list.appendChild(li);
+
+            });
+
+            container.appendChild(clone);
+
         });
-
-    },
-
-    createCard(project){
-
-        const card=document.createElement('article');
-
-        card.className='card project-card';
-
-        card.innerHTML=`
-
-            <img
-                src="${project.thumbnail}"
-                alt="${project.title}"
-                class="project-thumbnail"
-            >
-
-            <div class="card-body">
-
-                <h3>${project.title}</h3>
-
-                <p>${project.description || ''}</p>
-
-                <span class="badge badge-primary">
-
-                    ${project.difficulty}
-
-                </span>
-
-                <div class="mt-3">
-
-                    <a
-                        href="${project.repository}"
-                        target="_blank"
-                        class="btn btn-primary"
-                    >
-
-                        View Repository
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        `;
-
-        return card;
 
     }
 
