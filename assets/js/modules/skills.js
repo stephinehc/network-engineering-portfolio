@@ -1,24 +1,26 @@
+/* ==========================================================================
+   Skills Module
+========================================================================== */
+
 'use strict';
 
 const SkillsModule = {
 
-    async load(){
+    async load() {
 
-        try{
+        try {
 
-            const response = await fetch(
+            const response =
+                await fetch('data/skills.json');
 
-                'data/skills.json'
-
-            );
-
-            const skills = await response.json();
+            const skills =
+                await response.json();
 
             this.render(skills);
 
         }
 
-        catch(error){
+        catch (error) {
 
             console.error(error);
 
@@ -26,39 +28,44 @@ const SkillsModule = {
 
     },
 
-    render(skills){
+    render(skills) {
 
-        const tbody=document.querySelector(
-
+        const tbody = document.querySelector(
             '[data-skills-table]'
-
         );
 
-        if(!tbody){
+        if (!tbody) return;
 
-            return;
+        tbody.innerHTML = '';
 
-        }
+        const template = document.getElementById(
+            'skill-row-template'
+        );
 
-        tbody.innerHTML='';
+        skills.forEach(skill => {
 
-        skills.forEach(skill=>{
+            const clone =
+                template.content.cloneNode(true);
 
-            const row=document.createElement('tr');
+            clone.querySelector(
+                '[data-skill-category]'
+            ).textContent = skill.category;
 
-            row.innerHTML=`
+            clone.querySelector(
+                '[data-skill-name]'
+            ).textContent = skill.technology;
 
-                <td>${skill.category}</td>
+            clone.querySelector(
+                '[data-skill-level]'
+            ).textContent =
+                '★'.repeat(skill.level);
 
-                <td>${skill.technology}</td>
+            clone.querySelector(
+                '[data-skill-projects]'
+            ).textContent =
+                (skill.projects || []).join(', ');
 
-                <td>${'★'.repeat(skill.level)}</td>
-
-                <td>${skill.projects.join(', ')}</td>
-
-            `;
-
-            tbody.appendChild(row);
+            tbody.appendChild(clone);
 
         });
 
