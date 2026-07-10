@@ -1,0 +1,172 @@
+[
+    {
+        "category":"Routing",
+
+        "technology":"Subnetting",
+
+        "level":5,
+
+        "projects":[1,2,3,4,5,6,7,8,9]
+    },
+
+    {
+        "category":"Routing",
+
+        "technology":"Static Routing",
+
+        "level":5,
+
+        "projects":[1]
+    },
+
+    {
+        "category":"Routing",
+
+        "technology":"RIP",
+
+        "level":4,
+
+        "projects":[2]
+    },
+
+    {
+        "category":"Routing",
+
+        "technology":"OSPF",
+
+        "level":5,
+
+        "projects":[2,3,4,5,6,7,8,9]
+    },
+
+    {
+        "category":"Switching",
+
+        "technology":"VLAN",
+
+        "level":5,
+
+        "projects":[1,2,3,4,5,6,7,8,9]
+    },
+
+    {
+        "category":"Switching",
+
+        "technology":"Trunking",
+
+        "level":5,
+
+        "projects":[1,2,3,4,5,6,7,8,9]
+    },
+
+    {
+        "category":"Switching",
+
+        "technology":"Inter-VLAN Routing",
+
+        "level":5,
+
+        "projects":[2,3,4,5,6,7,8,9]
+    },
+
+    {
+        "category":"Switching",
+
+        "technology":"RSTP",
+
+        "level":5,
+
+        "projects":[3,4,5,6,7,8,9]
+    },
+
+    {
+        "category":"Switching",
+
+        "technology":"EtherChannel",
+
+        "level":5,
+
+        "projects":[3,4,5,6,7,8,9]
+    },
+
+    {
+        "category":"Services",
+
+        "technology":"DHCP",
+
+        "level":5,
+
+        "projects":[1,2,3,4,5,6,7,8,9]
+    },
+
+    {
+        "category":"Services",
+
+        "technology":"DNS",
+
+        "level":5,
+
+        "projects":[5,6,7,8,9]
+    },
+
+    {
+        "category":"Services",
+
+        "technology":"TFTP",
+
+        "level":4,
+
+        "projects":[4,5,6,7,8,9]
+    },
+
+    {
+        "category":"Security",
+
+        "technology":"ACL",
+
+        "level":5,
+
+        "projects":[5,6,7,8,9]
+    },
+
+    {
+        "category":"Security",
+
+        "technology":"NAT",
+
+        "level":5,
+
+        "projects":[5,6,7,8,9]
+    },
+
+    {
+        "category":"WAN",
+
+        "technology":"GRE over IPsec",
+
+        "level":5,
+
+        "projects":[7]
+    },
+
+    {
+        "category":"Wireless",
+
+        "technology":"Enterprise WLAN",
+
+        "level":4,
+
+        "projects":[9]
+    },
+
+    {
+        "category":"High Availability",
+
+        "technology":"HSRP",
+
+        "level":5,
+
+        "projects":[8,9]
+    }
+
+]
