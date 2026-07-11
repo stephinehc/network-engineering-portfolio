@@ -1,23 +1,136 @@
 {
-  "name": "Stephine Hubert Campos",
-  "title": "Licensed Electronics Engineer",
-  "careerObjective": "...",
-  "experience": [
-    {
-      "position": "College Faculty",
-      "company": "...",
-      "period": "2018–Present",
-      "highlights": [
-        "...",
-        "..."
-      ]
-    }
-  ],
-  "education": [
-    {
-      "degree": "...",
-      "school": "...",
-      "year": "..."
-    }
-  ]
+    "profile": {
+        "name": "Stephine Hubert Campos",
+        "title": "Licensed Electronics Engineer",
+        "headline": "Cisco Networking Academy Instructor • Aspiring Network Engineer • IT Infrastructure • System Integrator",
+        "location": "Cebu, Philippines",
+        "email": "YOUR_EMAIL",
+        "phone": "YOUR_PHONE",
+        "github": "https://github.com/YOUR_USERNAME",
+        "linkedin": "https://linkedin.com/in/YOUR_LINKEDIN"
+    },
+
+    "careerObjective": "Licensed Electronics Engineer with nearly eight years of experience in engineering education and Cisco Networking Academy instruction. Seeking opportunities in Network Engineering, System Integration, IT Infrastructure, and Network Operations where I can contribute to enterprise networking projects while continuously expanding my technical expertise.",
+
+    "experience": [
+
+        {
+            "position": "College Faculty",
+            "company": "YOUR UNIVERSITY",
+            "period": "2018 – Present",
+
+            "responsibilities": [
+
+                "Teach Computer Engineering, Electronics Engineering, and Industrial Engineering courses.",
+
+                "Develop networking laboratory activities using Cisco Packet Tracer.",
+
+                "Prepare engineering laboratory manuals and technical documentation.",
+
+                "Mentor students in networking and engineering capstone projects."
+
+            ]
+        },
+
+        {
+            "position": "Cisco Networking Academy Instructor",
+            "company": "Cisco Networking Academy",
+            "period": "Current",
+
+            "responsibilities": [
+
+                "Deliver ITN, SRWE, and ENSA courses.",
+
+                "Prepare students for CCNA certification.",
+
+                "Develop enterprise networking laboratories and troubleshooting exercises."
+
+            ]
+        }
+
+    ],
+
+    "education": [
+
+        {
+
+            "degree": "Bachelor of Science in Electronics Engineering",
+
+            "school": "YOUR UNIVERSITY",
+
+            "year": "2018"
+
+        }
+
+    ],
+
+    "technicalSkills": {
+
+        "Routing": [
+
+            "Static Routing",
+
+            "RIP",
+
+            "OSPF"
+
+        ],
+
+        "Switching": [
+
+            "VLAN",
+
+            "Trunking",
+
+            "STP",
+
+            "EtherChannel"
+
+        ],
+
+        "Infrastructure": [
+
+            "DHCP",
+
+            "DNS",
+
+            "TFTP"
+
+        ],
+
+        "Security": [
+
+            "ACL",
+
+            "NAT",
+
+            "GRE over IPsec VPN"
+
+        ],
+
+        "High Availability": [
+
+            "HSRP"
+
+        ],
+
+        "Wireless": [
+
+            "Cisco Wireless LAN"
+
+        ]
+
+    },
+
+    "featuredProjects": [
+
+        "Enterprise Campus Network",
+
+        "Secure Enterprise",
+
+        "Headquarters & Branch VPN",
+
+        "Enterprise Infrastructure Capstone"
+
+    ]
 }
