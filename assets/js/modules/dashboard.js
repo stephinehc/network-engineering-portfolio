@@ -106,3 +106,4 @@ const DashboardModule = {
     }
 
 };
+window.DashboardModule = DashboardModule;
