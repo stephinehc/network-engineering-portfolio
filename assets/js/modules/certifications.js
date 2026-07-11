@@ -74,3 +74,4 @@ const CertificationsModule = {
     }
 
 };
+window.CertificationsModule = CertificationsModule;
