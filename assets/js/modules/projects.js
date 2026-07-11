@@ -84,3 +84,4 @@ const ProjectsModule = {
     }
 
 };
+window.ProjectsModule = ProjectsModule;
