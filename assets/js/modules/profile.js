@@ -104,3 +104,4 @@ const ProfileModule = {
     }
 
 };
+window.ProfileModule = ProfileModule;
