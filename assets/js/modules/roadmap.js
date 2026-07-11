@@ -79,3 +79,4 @@ const RoadmapModule = {
     }
 
 };
+window.RoadmapModule = RoadmapModule;
