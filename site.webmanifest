@@ -1,0 +1,8 @@
+{
+    "name": "Network Engineering Portfolio",
+    "short_name": "Portfolio",
+    "display": "standalone",
+    "start_url": "/",
+    "background_color": "#0f172a",
+    "theme_color": "#2563eb"
+}
