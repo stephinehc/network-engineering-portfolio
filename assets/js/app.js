@@ -42,5 +42,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (typeof CertificationsModule !== 'undefined') {
         await CertificationsModule.load();
     }
+    // Resume
+    if (typeof ResumeModule !== 'undefined') {
+    await ResumeModule.load();
+    }
 
 });
